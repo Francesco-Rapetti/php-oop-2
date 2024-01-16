@@ -13,8 +13,15 @@
 <body>
     <div class="container" style="background-image: url('<?= $animalsProduct->image ?>');">
         <div class="row gap-3">
+            <div class="glass w-auto">
+                <span class="fs-1 fw-bold"><?= $animalsProduct->name ?></span>
+            </div>
+
+            <!-- spacer -->
+            <div></div>
+
             <?php foreach ($products as $product) : ?>
-                <div class="card" style="width: 18rem;">
+                <div class="card glass" style="width: 18rem;">
                     <div class="card-img-top-container d-flex align-items-center justify-content-center">
                         <img src="<?= $product->image ?>" class="card-img-top" alt="...">
                     </div>
@@ -35,7 +42,7 @@
 
 <style>
     body {
-        padding: 100px 0;
+        padding: 50px 0;
     }
 
     .container {
@@ -43,10 +50,11 @@
         border: 2px solid black;
         border-radius: 16px;
         padding: 1rem 2rem;
+        margin: 50px auto;
         overflow: hidden;
     }
 
-    .card {
+    .glass {
         background: rgba(253, 251, 251, 0.48);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
