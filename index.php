@@ -54,7 +54,7 @@
     }
 
     .container {
-        background-size: 30%;
+        background-size: 50%;
         border: 2px solid black;
         border-radius: 16px;
         padding: 1rem 2rem;
