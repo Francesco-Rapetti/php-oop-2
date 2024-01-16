@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <?php foreach ($categories as $category) : ?>
@@ -36,7 +37,7 @@
                             <h5 class="card-title"><?= $product->name ?></h5>
                             <p class="card-text"><?= $product->description ?></p>
                             <div class="d-flex align-items-center mt-3">
-                                <a href="#" class="btn btn-primary me-3">Acquista</a>
+                                <a href="#" class="btn btn-primary me-3">Aggiungi <i class="fa-solid fa-cart-arrow-down"></i></a>
                                 <p class="fw-bold fs-5"><?= $product->price ?> €</p>
                             </div>
                         </div>
@@ -54,7 +55,7 @@
     }
 
     .container {
-        background-size: 50%;
+        background-size: 30%;
         border: 2px solid black;
         border-radius: 16px;
         padding: 1rem 2rem;
