@@ -13,6 +13,18 @@ $categories = [
         "Accessori",
         "https://previews.123rf.com/images/amalga/amalga1502/amalga150200047/36801893-seamless-pattern-con-accessori-per-cani-vector-cartoon-sfondo.jpg",
         "Accessori per tutti gli animali domestici."
+    ),
+
+    $healthcare = new Category(
+        "Prodotti per la cura",
+        "https://thumbs.dreamstime.com/b/cute-vet-seamless-pattern-hand-drawn-background-pet-faces-veterinary-equipment-207731041.jpg",
+        "Prodotti per la cura di tutti gli animali domestici"
+    ),
+
+    $toys = new Category(
+        "Giochi",
+        "https://images.vexels.com/content/208003/preview/dog-toys-pattern-design-89b8c8.png",
+        "Giochi per tutti gli animali domestici"
     )
 ];
 
@@ -79,5 +91,69 @@ $products = [
         'Pettorina',
         'Pettorina per gatti e cani di piccola taglia in microfibra.',
         11.99
-    )
+    ),
+
+    new Product(
+        $healthcare,
+        'https://i.ebayimg.com/images/g/VKMAAOSwEXZeY1wz/s-l1200.webp',
+        'Spazzola per animali',
+        'Spazzola per cani e gatti indossabile. Rimuove tutto il pelo in eccesso con facilità.',
+        7.99
+    ),
+
+    new Product(
+        $healthcare,
+        'https://www.yagos.it/11584/Collare-antipulci-e-zecche-Seresto-per-cani-da-8kg.jpg',
+        'Collare antipulci per cani',
+        'Collare antipulci per cani più pesanti di 8 kg. Offre una protezione di 7-8 mesi.',
+        39.49
+    ),
+
+    new Product(
+        $healthcare,
+        'https://canatura.s25.cdn-upgates.com/_cache/3/e/3e2b9afb2e872a1c1f54abcc43e492a7-hafula.png',
+        'Shampoo per gatti',
+        'Shampo per gatti antipulci. Adatto ad ogni tipo di pelo.',
+        4.99
+    ),
+
+    new Product(
+        $healthcare,
+        'https://www.speedy-care.it/wp-content/uploads/2021/09/CANE-E-GATTO-talco.png',
+        'Salviette umide per animali',
+        'Salviette umide per animali di ogni dimensione. Delicato e facile da usare.',
+        3.99
+    ),
+
+    new Product(
+        $toys,
+        'https://www.gemimports.co.uk/gemimportsltd/i/pmi/pet6419ob.png?_t=2281162543',
+        'Giocattolo di gomma a ingranaggio',
+        'Giocattolo in gomma per far divertire i tuoi cani. Resistente e divertente.',
+        14.99
+    ),
+
+    new Product(
+        $toys,
+        'https://petsrus.ie/wp-content/uploads/2022/01/nina-ottosson-buggin-out-puzzle-2.png',
+        'Puzzle per gatti',
+        'Gioco per allenare la reattività del tuo gatto.',
+        11.99
+    ),
+
+    new Product(
+        $toys,
+        'https://www.agripetgarden.it/media/catalog/product/cache/39bb8e22b0fe81fa1cbd673da9751694/t/i/tiragraffi_in_cartone_con_erba_gatta_sofa_2_44x22x6_6cm.png',
+        'Tiragraffi',
+        'Tiragraffi in cartone con erbagatta per le unghie del tuo gatto',
+        22.99
+    ),
+
+    new Product(
+        $toys,
+        'https://www.agripetgarden.it/media/catalog/product/cache/39bb8e22b0fe81fa1cbd673da9751694/p/a/palla_interattiva_per_cani_8cm.png',
+        'Pallina per animali',
+        'Pallina con contenitore per crocchette. Ideale per cani e gatti.',
+        4.99
+    ),
 ];
