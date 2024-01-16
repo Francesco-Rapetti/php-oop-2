@@ -11,7 +11,7 @@ $categories = [
 
     $homeProduct = new Category(
         "Prodotti per la casa",
-        "https://st3.depositphotos.com/1009092/12906/v/600/depositphotos_129068960-stock-illustration-home-decoration-ornamental-wooden-house.jpg",
+        "https://iconspng.com/uploads/kitchenutensilscrockeryseamlesspattern/kitchenutensilscrockeryseamlesspattern.png",
         "Prodotti per la cura della casa."
     )
 ];
@@ -48,4 +48,36 @@ $products = [
         'Pettorina in materiale elastico. Per cani e gatti.',
         17.99
     ),
+
+    new Product(
+        $homeProduct,
+        'https://content.dambros.it/uploads/2023/03/20093818/0000217782.png',
+        'Detersivo per piatti',
+        'Detersivo per piatti al gusto limone. Sgrassante e igienizzante.',
+        2.99
+    ),
+
+    new Product(
+        $homeProduct,
+        'https://www.sagigroup.com/wp-content/uploads/2020/02/a75-015dcdeomatic_notedipulito_diff.png',
+        'Deodorante per ambienti',
+        'Deodorante per ambienti al gurto di cannella. Perfetto per la notte.',
+        9.99
+    ),
+
+    new Product(
+        $homeProduct,
+        'https://www.midea.com/content/dam/midea-aem/my/vacuum-cleaners/robotics/4000pa--mvc-s8-/Midae_S8_EN_1500X1500_02.png',
+        'Robot aspirapolvere',
+        'Robot aspirapolvere in grado di pulire fino a 250 metri quadri. Dotato di connessione wifi',
+        349.99
+    ),
+
+    new Product(
+        $homeProduct,
+        'https://www.detergenzaprofessionaleonline.it/wp-content/uploads/R46-GUANTO.png',
+        'Guanti in lattice',
+        'Guanti in lattice per l\'uso casalingo. Confezione da 50pz',
+        3.99
+    )
 ];
