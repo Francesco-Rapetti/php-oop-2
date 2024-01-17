@@ -32,9 +32,7 @@ foreach ($categories as $category) {
 
                     <button class="btn position-relative">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <div class="cart-counter bg-danger text-white rounded-circle">
-                            <?= $cartCounter ?>
-                        </div>
+                        <div class="cart-counter bg-danger text-white rounded-circle"><?= count($cart->items) ?></div>
                     </button>
                 </div>
             </div>
@@ -62,10 +60,10 @@ foreach ($categories as $category) {
                             <div class="card-body">
                                 <h5 class="card-title"><?= $product->name ?></h5>
                                 <p class="card-text"><?= $product->description ?></p>
-                                <div class="d-flex align-items-center mt-3">
-                                    <a href="#" class="btn btn-primary me-3">Aggiungi <i class="fa-solid fa-cart-arrow-down"></i></a>
-                                    <p class="fw-bold fs-5"><?= $product->price ?> €</p>
-                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3 ps-3 justify-self-end">
+                                <button class="btn btn-primary me-3 add-cart-btn">Aggiungi <i class="fa-solid fa-cart-arrow-down"></i></button>
+                                <p class="fw-bold fs-5"><?= $product->price ?> €</p>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -73,6 +71,8 @@ foreach ($categories as $category) {
             </div>
         <?php endforeach; ?>
     </main>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
@@ -96,6 +96,8 @@ foreach ($categories as $category) {
         justify-content: center;
         width: 18px;
         height: 18px;
+        font-size: 14px;
+        font-weight: 600;
     }
 
     .container {
@@ -119,6 +121,10 @@ foreach ($categories as $category) {
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(14.3px);
         -webkit-backdrop-filter: blur(14.3px);
+    }
+
+    .card {
+        padding: 0px;
     }
 
     .card-img-top-container {
