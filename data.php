@@ -1,8 +1,7 @@
 <?php
 
 require __DIR__ . "/Models/Product.php";
-
-$cartCounter = 0;
+require __DIR__ . "/Models/Cart.php";
 
 $categories = [
     $food = new Category(
@@ -159,3 +158,5 @@ $products = [
         4.99
     ),
 ];
+
+$cart = Cart::getInstance();
