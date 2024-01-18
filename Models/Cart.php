@@ -1,10 +1,9 @@
 <?php
-
 class Cart
 {
     public array $items;
-    public int $total;
-    private Cart $istance;
+    public float $total;
+    private static Cart $istance;
 
     private function __construct()
     {
